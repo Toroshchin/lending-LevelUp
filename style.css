@@ -1,1 +1,135 @@
-he
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  width: 100%;
+  background-color: rgb(207, 205, 205);
+}
+
+.header-content {
+  padding: 5px 0px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 24px;
+}
+
+.header__button-order {
+  background-color: red;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 7px;
+}
+
+/* PROMO */
+
+.promo {
+  color: black;
+  margin-bottom: 182px;
+}
+
+.promo-title {
+  padding: 70px;
+}
+
+.promo-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.promo__image {
+  width: 35%;
+}
+
+.promo__info {
+  width: 50%;
+}
+
+.promo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.promo-list__item {
+  font-weight: bolder;
+  font-size: 32px;
+  margin-bottom: 30px;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: rgba(250, 235, 215, 0.7);
+  bac
+}
+
+.promo-bacground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: -10;
+}
+
+/* COMPOSITION */
+
+
+/* COMMENTS */
+
+.comment {
+  width: 90%;
+  margin: 0 auto;
+  background-color: blue;
+  border-radius: 20px;
+  display: flex;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.comment-people-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.comment__avatar {
+  width: 15em;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.comment__name {
+  font-size: 22px;
+
+}
+
+.comment__text {
+  padding: 30px;
+  font-size: 22px;
+  margin: auto 0;
+}
+
+.comment__text {
+  flex-grow: 1;
+}
+
+
