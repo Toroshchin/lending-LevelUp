@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
@@ -41,6 +42,10 @@ header {
 .promo {
   color: black;
   margin-bottom: 182px;
+  position: relative;
+  box-sizing: border-box;
+  height: 100vh;
+  margin-bottom: 50px;
 }
 
 .promo-title {
@@ -53,6 +58,7 @@ header {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 20px;
+  z-index: 20;
 }
 
 .promo__image {
@@ -78,58 +84,135 @@ header {
   padding: 7px;
   border-radius: 7px;
   background-color: rgba(250, 235, 215, 0.7);
-  bac
 }
 
-.promo-bacground {
+.promo-background__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+.promo-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
-  z-index: -10;
+  height: 100%;
+  overflow: hidden;
+  bacground: #ccc;
 }
 
-/* COMPOSITION */
+/* CONSIST */
 
 
-/* COMMENTS */
+
+/* COMMENTS-SLIDES */
+
+.comments {
+  position: relative;
+}
 
 .comment {
   width: 90%;
-  margin: 0 auto;
-  background-color: blue;
-  border-radius: 20px;
+  height: 100%;
   display: flex;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
+  padding: 20px;
 }
 
 .comment-people-info {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+  height: 100%;
 }
 
 .comment__avatar {
-  width: 15em;
   border-radius: 50%;
-  padding: 30px;
+  height: 80%;
+  width: auto;
 }
 
 .comment__name {
+  text-align: center;
+  margin-top: 10px;
   font-size: 22px;
-
+  font-weight: bold;
 }
 
 .comment__text {
-  padding: 30px;
+  width: 70%;
+  margin: auto;
   font-size: 22px;
-  margin: auto 0;
 }
 
-.comment__text {
-  flex-grow: 1;
+.slider {
+  width: 75%;
+  height: 400px;
+  overflow: hidden;
+  border: 10px solid #000;
 }
 
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.navigation {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.navigation__bar {
+  height: 8px;
+  width: 30px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: rgb(204, 32, 32);
+  opacity: 0.3;
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+.navigation__bar:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+}
+
+input[name='radio'] {
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.slide {
+  width: 33%;
+  box-sizing: border-box;
+  transition: all 0.6s ease;
+}
+
+.comment {
+  width: 100%;
+  height: 100%;
+}
+
+#slides__radio1:checked ~ .s1 {
+  margin-left: 0;
+}
+
+#slides__radio2:checked ~ .s1 {
+  margin-left: -33%;
+}
+#slides__radio3:checked ~ .s1 {
+  margin-left: -66%;
+}
