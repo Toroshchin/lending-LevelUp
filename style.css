@@ -37,9 +37,9 @@ header {
   padding: 7px;
 }
 
-/* PROMO */
+/* PROMO-HEAD */
 
-.promo {
+.promo-head {
   color: black;
   margin-bottom: 182px;
   position: relative;
@@ -48,11 +48,11 @@ header {
   margin-bottom: 50px;
 }
 
-.promo-title {
+.promo-head-title {
   padding: 70px;
 }
 
-.promo-content {
+.promo-head-content {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -61,15 +61,15 @@ header {
   z-index: 20;
 }
 
-.promo__image {
+.promo-head__image {
   width: 35%;
 }
 
-.promo__info {
+.promo-head__info {
   width: 50%;
 }
 
-.promo-list {
+.promo-head-list {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -77,7 +77,7 @@ header {
   height: 100%;
 }
 
-.promo-list__item {
+.promo-head__item {
   font-weight: bolder;
   font-size: 32px;
   margin-bottom: 30px;
@@ -86,7 +86,7 @@ header {
   background-color: rgba(250, 235, 215, 0.7);
 }
 
-.promo-background__video {
+.promo-head-background__video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,7 +96,7 @@ header {
   z-index: -10;
 }
 
-.promo-background {
+.promo-head-background {
   position: absolute;
   top: 0;
   left: 0;
@@ -108,12 +108,78 @@ header {
 
 /* CONSIST */
 
+.consist {
+  padding: 20px 0;
+  text-align: center;
+}
 
+.consist-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.consist-product {
+  width: 25%;
+  height: 30%;
+  margin: auto 10px;
+  align-items: center;
+}
+
+.consists-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.consist__img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.arrow {
+  margin: 50px auto;
+}
+
+.arrow {
+  width: 150px;
+  height: 3px;
+  background: black;
+}
+
+.left:nth-child(1) {
+  rotate: 25deg;
+}
+
+.left:nth-child(3) {
+  rotate: -25deg;
+}
+
+.right:nth-child(1) {
+  rotate: -25deg;
+}
+
+.right:nth-child(3) {
+  rotate: 25deg;
+}
 
 /* COMMENTS-SLIDES */
 
 .comments {
   position: relative;
+  margin-top: 250px;
+  width: 100%;
+  height: 30vh;
+  background-color: #ccc;
+  box-sizing: border-box;
 }
 
 .comment {
@@ -147,7 +213,6 @@ header {
 }
 
 .slider {
-  width: 75%;
   height: 400px;
   overflow: hidden;
   border: 10px solid #000;
@@ -216,3 +281,7 @@ input[name='radio'] {
 #slides__radio3:checked ~ .s1 {
   margin-left: -66%;
 }
+
+/* PROMO-DESCRIPTION */
+
+
