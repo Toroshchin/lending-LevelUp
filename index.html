@@ -6,7 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="js/jquery.countdown.js"></script>
   <title>LevelUp</title>
+  <script>
+    $(function () {
+      $(".digits").countdown({
+        image: "img/digits.png",
+        format: "mm:ss",
+        endTime: new Date(2013, 12, 2)
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -205,12 +216,46 @@
 
   </div>
 
+  <div class="order">
+    <div class="wrapper">
+      <div class="order-header">
+        <h2 class="order__title">LevelUp</h2>
+
+      </div>
+      <div class="order-body">
+        <img class="order__promo-image" src="./media/image/promo-image.png" alt="promo-image">
+        <div class="order-inputs">
+          <h4 class="order-inputs__title">До конца акции осталось:</h4>
+          <div id="countdown"></div>
+          <div class="order-price">
+            <div class="order__old-price">1290 р.</div>
+            <div class="order__new-price">990 р.</div>
+          </div>
+          <input type="text" placeholder="Имя">
+          <input type="number" placeholder="Номер телефона +7">
+          <input type="button" value="Заказать">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
 
 
 
 
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="node_modules/jquery/dist/jquery.min.js"><\/script>')</script>
+  <script src="jquery.time-to.js"></script>
+  <script>
+    $('#countdown').timeTo(1800, function () {
+      return NaN
+    });
+  </script>
 </body>
 
 </html>

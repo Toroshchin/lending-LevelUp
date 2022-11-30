@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  font-family: Tahoma, Verdana, Aial, sans-serif;
+}
+
 .wrapper {
   width: 75%;
   margin: 0 auto;
@@ -214,8 +219,8 @@ header {
   width: 75%;
   height: 95%;
   overflow: hidden;
-  border: 10px solid #000;
-  margin: 20px 0;
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
 }
 
 .middle {
@@ -327,4 +332,86 @@ input[name='radio'] {
   margin: 20px;
   text-align: center;
   box-sizing: content-box;
+}
+
+/* CurentDown */
+
+.timeTo {
+  font-size: 28px;
+  line-height: 108%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.timeTo span {
+  vertical-align: top;
+}
+
+.timeTo div {
+  position: relative;
+  display: inline-block;
+  width: 25px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.timeTo ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 3px;
+}
+
+/* ORDER */
+
+.order-header {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.order__title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 38px;
+}
+
+.order-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__promo-image {
+  width: 35%;
+}
+
+.order-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 35%;
+  border: 3px solid red;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.order-inputs__title {
+  text-align: center;
+}
+
+.order-price {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.order__old-price {
+  font-size: 22px;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.order__new-price {
+  font-size: 32px;
+  color: red;
 }
